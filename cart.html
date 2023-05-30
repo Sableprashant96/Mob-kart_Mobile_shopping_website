@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - Mobile Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header-section">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="static-img/logo.jpg" alt="logo">
+                </a>
+                <h1>Mobile Shop</h1>
+            </div>
+            <nav>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </div>
+                <ul class="navigation">
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h2>My Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="static-img\ip12.png" alt="Product 1">
+                <div class="item-details">
+                    <h3>Product 1</h3>
+                    <p>Price: INR 55555</p>
+                    <button onclick="removeFromCart(1)">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="static-img\ip13.png" alt="Product 2">
+                <div class="item-details">
+                    <h3>Product 2</h3>
+                    <p>Price: INR 79000</p>
+                    <button onclick="removeFromCart(2)">Remove</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Total Items: <span id="cart-count"></span></p>
+            <p>Total Price: $<span id="cart-total"></span></p>
+            <button>Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mobile Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

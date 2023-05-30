@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mob-kart</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header-section">
+            <div class="logo">
+                <img src="static-img/logo.jpg" alt="logo">
+                <h1>Mobile Shop</h1>
+            </div>
+            <nav>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </div>
+                <ul class="navigation">
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h2>Product List</h2>
+        <div class="brand-filter">
+            <label for="brand-select">Select Brand:</label>
+            <select id="brand-select">
+                <option value="all">All Brands</option>
+                <option value="iphone">iPhone</option>
+                <option value="realme">Realme</option>
+                <option value="samsung">Samsung</option>
+                <option value="oppo">Oppo</option>
+            </select>
+        </div>
+        <div class="product-list" id="product-list">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mobile Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

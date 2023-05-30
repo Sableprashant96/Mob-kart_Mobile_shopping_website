@@ -1,0 +1,303 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #C5FAD5;
+}
+
+header {
+    background-color: #AA96DA;
+    color: #330909;
+    padding: 20px;
+    text-align: left;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color:#FFFFD2;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #867b7b;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 02px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.search button {
+    padding: 5px 10px;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+.cart {
+    margin-top: 20px;
+    
+}
+
+/* #cart-items {
+    width: 10px;
+    height: 10px;
+} */
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px; /* Adjust the max width as needed */
+    max-height: 180px; /* Adjust the max height as needed */
+    margin-bottom: auto;
+    
+}
+
+.cart-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-width:  200px; /* Adjust the max width as needed */
+    max-height: 330px;
+}
+
+.item-details {
+    padding: 10px;
+}
+
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-summary h3 {
+    margin-top: 0;
+}
+
+.cart-summary p {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Add your existing CSS styles here */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 330px;
+}
+
+.brand-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-filter label {
+    margin-right: 10px;
+}
+
+.brand-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-filter label {
+    margin-right: 10px;
+}
+
+.brand-filter select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.brand-filter select:hover {
+    border-color: #888;
+}
+
+.brand-filter select:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px #aaa;
+}
+
+.brand-filter option {
+    font-size: 14px;
+}
